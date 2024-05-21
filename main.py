@@ -4,8 +4,10 @@ from textblob import TextBlob
 import requests
 from bs4 import BeautifulSoup
 from googlesearch import search
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)
 
 def analyze_sentiment(text):
     analysis = TextBlob(text)
