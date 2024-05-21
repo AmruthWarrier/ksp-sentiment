@@ -1,0 +1,4 @@
+Flask==2.0.2
+textblob==0.15.3
+beautifulsoup4==4.10.0
+google==3.0.0
