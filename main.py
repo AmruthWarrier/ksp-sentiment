@@ -30,6 +30,10 @@ def retrieve_recent_posts(query, num_posts=5):
         })
     return posts
 
+@app.route('/', methods=['GET'])
+def home():
+    return jsonify({"message": "hello"}), 200
+
 @app.route('/recent_posts', methods=['GET'])
 def get_recent_posts():
     query = request.args.get('query')
